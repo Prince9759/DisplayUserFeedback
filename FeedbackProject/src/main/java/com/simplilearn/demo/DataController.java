@@ -15,7 +15,8 @@ public class DataController {
 	@Autowired
 	UserDataRepo repo;
 	
-	@GetMapping("/saveData")
+        @RequestMapping("/saveData")
+	@ResponseBody
 	
 	public String saveData(UserData userData)
 	{
